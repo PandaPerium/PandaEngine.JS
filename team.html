@@ -134,7 +134,7 @@ body {
 <script>
     const servicesSection = document.querySelector('.services');
 
-fetch('teams/teams.json')
+fetch('https://raw.githubusercontent.com/PandaPerium/PandaEngine.JS/main/team.json')
   .then(response => response.json())
   .then(teams => {
     Object.keys(teams).forEach(person => {
